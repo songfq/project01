@@ -1,0 +1,21 @@
+{
+  "service_code": "base_customer",
+  "service_data": {
+    "BRSCH": 18,
+    "country": "CN",
+    "city1": "巴音郭楞",
+    "ZBUKRS": "1400/",
+    "ZLXR": "黄其斌",
+    "ZFR": "黄其斌",
+    "IDNUMBER": 352227197408191336,
+    "ZNSRLB": "00001",
+    "busort1": "黄其斌",
+    "street": "库尔勒利华个人客户地址",
+    "nameorg1": "黄其斌",
+    "IFID": "ZC-0000-20240305-0013",
+    "BU_PARTNER": "1109257",
+    "region": "290",
+    "KUKLA": "06",
+    "TELNUMBER1": "11111111111"
+  }
+}
