@@ -28,5 +28,6 @@ public class Main {
 		data.put("dd", dd);
 		
 		System.out.println(Main.getDecimalValue(data, "dd"));
+		System.out.println("我再实验拉，好开心");
 	}
 }
