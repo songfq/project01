@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileUtils {
-
+	
 	public static String getJson(String path) throws Exception {
 		String json = "";
 		File file = null;
@@ -15,13 +15,14 @@ public class FileUtils {
 		try {
 			file = new File(path);
 			inputStream = new FileInputStream(file);
-
+			
 			byte[] bytes = new byte[inputStream.available()];
 			inputStream.read(bytes);
 			inputStream.close();
-
+			
 			json = new String(bytes, "UTF-8");
-
+			
+			System.out.println("我再develop添加了一行代码");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -31,7 +32,7 @@ public class FileUtils {
 		}
 		return json;
 	}
-
+	
 	public static byte[] getImage(String path) {
 		byte[] content = null;
 		File file = null;
@@ -39,11 +40,11 @@ public class FileUtils {
 		try {
 			file = new File(path);
 			inputStream = new FileInputStream(file);
-
+			
 			content = new byte[inputStream.available()];
 			inputStream.read(content);
 			inputStream.close();
-
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -54,11 +55,11 @@ public class FileUtils {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-
+			
 		}
 		return content;
 	}
-
+	
 	public static String sqlListToStr(List<String> idList) {
 		if (idList == null || idList.size() <= 0) {
 			return "";
@@ -71,7 +72,7 @@ public class FileUtils {
 		join = join.substring(1);
 		return join;
 	}
-
+	
 	public static void main(String[] args) {
 		try {
 			// FileUtils.getJson("src/json/FsiPaymentFacade.json");
@@ -84,5 +85,5 @@ public class FileUtils {
 			e.printStackTrace();
 		}
 	}
-
+	
 }
